@@ -15,6 +15,13 @@ export const AnimalReducer = (animals: Animal[], action: Action) => {
     case ActionTypes.LOADED: {
       return JSON.parse(action.payload) as Animal[];
     }
+
+    case ActionTypes.FEED_ANIMAL: {
+      const { id, fedAt } = JSON.parse(action.payload);
+
+      return animals.map((a) => (a.id === id ? { ...a, lastFed: fedAt } : a));
+    }
+
     default:
       return animals;
   }

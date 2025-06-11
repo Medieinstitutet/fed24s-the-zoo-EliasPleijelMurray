@@ -8,21 +8,28 @@ type AnimalPresentationProps = {
 export const AnimalPresentation = ({ animal }: AnimalPresentationProps) => {
   return (
     <>
-      <div key={animal.id} className="bg-amber-200">
-        <h1>{animal.name}</h1>
-        <h2>"{animal.latinName}"</h2>
-        <div className="text-left mb-6">
-          <span>{animal.shortDescription}</span>
-        </div>
-        <div className="">
+      <div className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="flex flex-col items-center p-6 space-y-4">
+          <h1 className="text-2xl font-extrabold text-center">{animal.name}</h1>
+          <h2 className="text-lg italic text-gray-500 text-center">
+            "{animal.latinName}"
+          </h2>
+
+          <p className="text-left text-gray-700">{animal.shortDescription}</p>
+
           <img
             src={animal.imageUrl}
             alt={animal.name}
-            // className="block mx-auto w-60 h-60 object-cover rounded-lg mb-6"
+            className="w-48 h-48 object-cover rounded-lg shadow-md"
           />
-        </div>
 
-        <Link to={`/animal/${animal.id}`}>Läs mer om {animal.name}</Link>
+          <Link
+            to={`/animal/${animal.id}`}
+            className="inline-block px-4 py-2 bg-amber-400 hover:bg-amber-500 text-white font-semibold rounded-lg transition"
+          >
+            Läs mer om {animal.name}
+          </Link>
+        </div>
       </div>
     </>
   );
