@@ -1,6 +1,7 @@
-import { Animals } from "../pages/Animals";
+import type { Animal } from "../models/Animal";
 
 export enum ActionTypes {
+  LOADED,
   FEED_ANIMAL,
 }
 
@@ -9,6 +10,12 @@ export type Action = {
   payload: string;
 };
 
-export const AnimalReducer = () => {
-  return Animals;
+export const AnimalReducer = (animals: Animal[], action: Action) => {
+  switch (action.type) {
+    case ActionTypes.LOADED: {
+      return JSON.parse(action.payload) as Animal[];
+    }
+    default:
+      return animals;
+  }
 };

@@ -1,15 +1,14 @@
-import { useFetchAnimals } from "../hooks/useFetchAnimals";
+import { useContext } from "react";
+import { AnimalContext } from "../contexts/AnimalContext";
+import { AnimalPresentation } from "../components/AnimalPresentation";
 
 export const Animals = () => {
-  const { data: animals, isLoading, error } = useFetchAnimals();
-
-  if (isLoading) return <div>Loading…</div>;
-  if (error) return <div>Fel: {error}</div>;
+  const { animals } = useContext(AnimalContext);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-5">
       {animals.map((a) => (
-        <AnimalCard key={a.id} animal={a} />
+        <AnimalPresentation key={a.id} animal={a} />
       ))}
     </div>
   );
