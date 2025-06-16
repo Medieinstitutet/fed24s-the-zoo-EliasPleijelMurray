@@ -6,6 +6,7 @@ export interface Animal {
   shortDescription: string;
   longDescription: string;
   imageUrl: string;
+  medicine: string;
   isfed: boolean;
   lastFed: string;
 }

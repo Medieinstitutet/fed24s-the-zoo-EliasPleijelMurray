@@ -41,6 +41,16 @@ export const AnimalDetail = () => {
           alt={animal.name}
           className="w-65 h-65 object-cover rounded"
         />
+        <dl className="grid grid-cols-1 gap-y-2">
+          <div className="flex">
+            <dt className="w-32 font-medium text-gray-600">Född</dt>
+            <dd className="flex-1 text-gray-800">{animal.yearOfBirth}</dd>
+          </div>
+          <div className="flex">
+            <dt className="w-32 font-medium text-gray-600">Mediciner</dt>
+            <dd className="flex-1 text-gray-800">{animal.medicine}</dd>
+          </div>
+        </dl>
         <p className="text-left max-w-prose">{animal.longDescription}</p>
 
         {isNearlyTime && (
