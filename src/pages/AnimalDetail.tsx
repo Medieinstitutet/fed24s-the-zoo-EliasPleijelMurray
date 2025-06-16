@@ -32,26 +32,27 @@ export const AnimalDetail = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
-      <h1 className="text-2xl font-bold text-center">{animal.name}</h1>
-      <h2 className="text-center">"{animal.latinName}"</h2>
-      <img
-        src={animal.imageUrl}
-        alt={animal.name}
-        className="w-65 h-65 object-cover rounded"
-      />
-      <p className="text-left max-w-prose">{animal.longDescription}</p>
+    <>
+      <div className="flex flex-col items-center justify-center space-y-4">
+        <h1 className="text-2xl font-bold text-center">{animal.name}</h1>
+        <h2 className="text-center">"{animal.latinName}"</h2>
+        <img
+          src={animal.imageUrl}
+          alt={animal.name}
+          className="w-65 h-65 object-cover rounded"
+        />
+        <p className="text-left max-w-prose">{animal.longDescription}</p>
 
-      {isNearlyTime && (
-        <div className="bg-yellow-100 text-yellow-800 px-4 py-2 w-3xs text-center rounded">
-          🕑 Snart dags att mata {animal.name}!
-        </div>
-      )}
+        {isNearlyTime && (
+          <div className="bg-yellow-100 text-yellow-800 px-4 py-2 w-3xs text-center rounded">
+            🕑 Snart dags att mata {animal.name}!
+          </div>
+        )}
 
-      <button
-        disabled={!canFeed}
-        onClick={handelClick}
-        className={`
+        <button
+          disabled={!canFeed}
+          onClick={handelClick}
+          className={`
         p-2 rounded text-white
         ${
           canFeed
@@ -59,13 +60,14 @@ export const AnimalDetail = () => {
             : "bg-gray-400 cursor-not-allowed"
         }
       `}
-      >
-        Mata {animal.name}
-      </button>
+        >
+          Mata {animal.name}
+        </button>
 
-      <Link to="/animals" className="text-blue-500 hover:underline">
-        ← Tillbaka
-      </Link>
-    </div>
+        <Link to="/animals" className="text-blue-500 hover:underline">
+          ← Tillbaka
+        </Link>
+      </div>
+    </>
   );
 };
