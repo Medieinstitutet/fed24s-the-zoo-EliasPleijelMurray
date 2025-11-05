@@ -70,8 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
-## 🏆 **Betyg: G**
-📌 **Motivering:** Studenten har uppfyllt alla krav för betyg G med väl strukturerad kod och korrekt användning av teknologier som Context API och Tailwind CSS. För VG krävs det dock förbättrad användning av animation och en tydligare hantering av routing och edge-cases som trasiga bildlänkar.
+## 🏆 **Betyg: VG**
+📌 **Motivering:** Projektet uppfyller alla krav för både betyg G och VG. Koden är välstrukturerad, med korrekt användning av React-koncept och effektiv stilhantering med Tailwind CSS.
 
 💡 **Förbättringsförslag:**  
-För att nå betyg VG rekommenderas det att tillämpa subtila animationer vid interaktioner och att säkerställa att routing, layout och hantering av bildlänkar är heltäckande implementerade.
+Förbättra felhantering för API-anrop och bildladdning, lägg till fler kommentarer och överväg ytterligare separation av logik från presentation.
