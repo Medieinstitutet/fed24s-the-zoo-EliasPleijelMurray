@@ -71,10 +71,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: G**
-📌 **Motivering:** Koden uppfyller alla krav för betyg G och flera för VG. Användningen av en router, context och reducers är korrekt. Bildfel hanteras, och det finns en funktionell översiktssida samt detaljsida för djuren med korrekt matningslogik.
+📌 **Motivering:** Studenten har uppfyllt alla krav för betyg G med väl strukturerad kod och korrekt användning av teknologier som Context API och Tailwind CSS. För VG krävs det dock förbättrad användning av animation och en tydligare hantering av routing och edge-cases som trasiga bildlänkar.
 
 💡 **Förbättringsförslag:**  
-För att nå högsta betyg VG behöver några förbättringar göras: 
-1. Implementera subtila animeringar vid klick på knappar och sidladdningar för bättre användarupplevelse. 
-2. Tydligare hantering av trasiga bildlänkar, exempelvis genom att ersätta med en placeholder-bild. 
-3. Utforska hur error-handling kan göras mer användarvänlig, speciellt om API-anropen misslyckas.
+För att nå betyg VG rekommenderas det att tillämpa subtila animationer vid interaktioner och att säkerställa att routing, layout och hantering av bildlänkar är heltäckande implementerade.
