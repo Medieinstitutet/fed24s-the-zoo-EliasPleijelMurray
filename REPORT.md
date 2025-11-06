@@ -71,7 +71,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla krav för både betyg G och VG. Koden är välstrukturerad, med korrekt användning av React-koncept och effektiv stilhantering med Tailwind CSS.
+📌 **Motivering:** Projektet uppfyller alla krav för både G och VG. Koden är välstrukturerad med korrekt användning av router, context, hooks och reducers. De trasiga bildlänkarna hanteras genom att ge alternativ text när bilden inte laddas, och användningen av Tailwind CSS visar att krav på användning av annan teknik för styling är uppfylld. Sidan innehåller också animering vid navigering och knapptryck, vilket bidrar till en smidig användarupplevelse.
 
 💡 **Förbättringsförslag:**  
-Förbättra felhantering för API-anrop och bildladdning, lägg till fler kommentarer och överväg ytterligare separation av logik från presentation.
+Det finns potential för förbättringar inom kodstrukturen, till exempel att bryta ned större komponenter i mindre delar för bättre läsbarhet och underhåll. Vidare kan felhantering vid dataladdning göras mer robust genom att införa en loading- och error-state.
