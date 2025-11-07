@@ -1,7 +1,6 @@
 # 📌 Rättningsrapport – fed24s-the-zoo-EliasPleijelMurray
 
 ## 🎯 Uppgiftens Krav:
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xBUCHFwF)
 # The Zoo
 
 I denna inlämningsuppgift kommer ni att bygga ett zoo. Zoo:t har ett antal djur som kommer behöva matas. 
@@ -66,12 +65,11 @@ Välj en teknik gällande css som ni antingen vill lära er mer om eller som ni 
 
 Ha roligt, skratta och lär er massor!
 
-
 ## 🔍 ESLint-varningar:
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla krav för både G och VG. Koden är välstrukturerad med korrekt användning av router, context, hooks och reducers. De trasiga bildlänkarna hanteras genom att ge alternativ text när bilden inte laddas, och användningen av Tailwind CSS visar att krav på användning av annan teknik för styling är uppfylld. Sidan innehåller också animering vid navigering och knapptryck, vilket bidrar till en smidig användarupplevelse.
+📌 **Motivering:** Projektet uppfyller samtliga G- och VG-krav specificerade, inklusive korrekt implementering av router, context, reducers och avancerad användning av CSS-tekniker.
 
 💡 **Förbättringsförslag:**  
-Det finns potential för förbättringar inom kodstrukturen, till exempel att bryta ned större komponenter i mindre delar för bättre läsbarhet och underhåll. Vidare kan felhantering vid dataladdning göras mer robust genom att införa en loading- och error-state.
+För framtida förbättringar, kan ytterligare subtila animationer införas för en mer dynamisk användarupplevelse.
