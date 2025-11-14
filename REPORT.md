@@ -69,7 +69,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: G**
-📌 **Motivering:** Projektet uppfyller de grundläggande kraven för betyg G. Koden är organiserad och följer etablerade konventioner för frontend-utveckling. Funktionaliteten för att visa djur, hantera matning och hantera trasiga bilder är implementerad. Dock finns det några områden som kan förbättras för att nå VG-nivån.
+📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyget G. Koden är strukturerad och funktionaliteten är implementerad enligt uppgiftens specifikationer. Studenten har använt en router, hanterat trasiga bildlänkar och använt en annan teknik än ren CSS för styling. Dock saknas implementation av VG-kraven såsom användning av context och reducers, samt subtila animeringar.
 
 💡 **Förbättringsförslag:**  
-För att nå VG-nivån bör projektet använda context API istället för props för komponentkommunikation och implementera reducers för djurhantering. Dessutom bör subtila animeringar läggas till vid interaktioner och sidladdningar. Säkerhetsaspekter som input-validering och hantering av externa resurser bör också beaktas. Implementera tjänster eller custom hooks för att hämta data mer effektivt och överväg att förbättra kodens läsbarhet genom fler kommentarer.
+För att nå VG bör studenten implementera datahämtning med hjälp av tjänster eller en custom hook, samt använda context och reducers för state management. Dessutom bör subtila animeringar läggas till för att förbättra användarupplevelsen. Kodkvaliteten kan förbättras genom att minska upprepningar och förbättra felhanteringen. Det rekommenderas också att följa etablerade naming conventions striktare och att säkerställa att alla komponenter är välkommenterade för bättre läsbarhet.
