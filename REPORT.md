@@ -66,10 +66,10 @@ Välj en teknik gällande css som ni antingen vill lära er mer om eller som ni 
 Ha roligt, skratta och lär er massor!
 
 ## 🔍 ESLint-varningar:
-- C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-EliasPleijelMurray\src\reducers\AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
+- /app/repos/fed24s-the-zoo-EliasPleijelMurray/src/reducers/AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: G**
-📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyget G. Det finns en router för att hantera navigering mellan sidor, trasiga bildlänkar hanteras korrekt, och en annan teknik än ren CSS används för styling. Dock saknas vissa element som krävs för VG-nivå, såsom användning av context och reducers. Koden är välstrukturerad och funktionell, men det finns utrymme för förbättringar i kodkvalitet och användarupplevelse.
+📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyget G. Koden är välstrukturerad med logisk filorganisation och följer etablerade konventioner för frontend-utveckling. Funktionaliteten är korrekt implementerad, inklusive användning av en router och hantering av trasiga bildlänkar. Dock saknas vissa element som krävs för VG, såsom användning av context och reducers samt subtila animeringar.
 
 💡 **Förbättringsförslag:**  
-För att nå VG-nivå bör projektet implementera context för komponentkommunikation och reducers för state-hantering av djur. Dessutom skulle subtila animeringar vid interaktioner och sidladdningar förbättra användarupplevelsen. Kodkvaliteten kan också förbättras genom att minska upprepning, förbättra felhantering och säkerställa att alla komponenter är välkommenterade och följer naming conventions.
+För att uppnå VG bör projektet använda context och reducers för state-hantering istället för props och vanlig state. Implementera subtila animeringar för att förbättra användarupplevelsen. Förbättra kodens läsbarhet genom att lägga till fler kommentarer, speciellt i komplexa delar av koden, och minska kodupprepning genom att extrahera gemensam logik till hjälpfunktioner eller hooks.
