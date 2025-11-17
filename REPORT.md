@@ -69,7 +69,15 @@ Ha roligt, skratta och lär er massor!
 - /app/repos/fed24s-the-zoo-EliasPleijelMurray/src/reducers/AnimalReducer.ts - no-unused-vars - 'LOADED' is defined but never used.,no-unused-vars - 'FEED_ANIMAL' is defined but never used.
 
 ## 🏆 **Betyg: G**
-📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyget G. Koden är välstrukturerad med logisk filorganisation och följer etablerade konventioner för frontend-utveckling. Funktionaliteten är korrekt implementerad, inklusive användning av en router och hantering av trasiga bildlänkar. Dock saknas vissa element som krävs för VG, såsom användning av context och reducers samt subtila animeringar.
+📌 **Motivering:** Projektet uppfyller de grundläggande kraven för betyg G. Det finns en router för att navigera mellan olika sidor och en översiktssida där användare kan klicka på djur för mer detaljer. Reducers och context används för att hantera djurdata, vilket visar förståelse för mer avancerade koncept inom React. Dock finns det brister i implementationen, såsom användning av 'react-router' istället för 'react-router-dom', avsaknad av hantering för trasiga bildlänkar, och brist på kommentarer och felhantering, vilket förhindrar ett högre betyg.
 
 💡 **Förbättringsförslag:**  
-För att uppnå VG bör projektet använda context och reducers för state-hantering istället för props och vanlig state. Implementera subtila animeringar för att förbättra användarupplevelsen. Förbättra kodens läsbarhet genom att lägga till fler kommentarer, speciellt i komplexa delar av koden, och minska kodupprepning genom att extrahera gemensam logik till hjälpfunktioner eller hooks.
+1. **Byt till 'react-router-dom'**: För att säkerställa korrekt funktionalitet och undvika problem vid körning, använd 'react-router-dom' istället för 'react-router'.
+
+2. **Hantering av trasiga bildlänkar**: Implementera en fallback-mekanism för bilder som inte laddas korrekt, vilket är ett krav för betyg G.
+
+3. **Förbättra kodkvalitet**: Lägg till kommentarer för att förklara viktiga delar av koden och rätta stavfel som 'handelClick' till 'handleClick'.
+
+4. **Error handling i API-anrop**: Lägg till try-catch-block för att hantera potentiella fel vid datahämtning och säkerställ att alla komponenter och funktioner följer DRY-principen för att undvika kodupprepning.
+
+5. **Subtila animeringar**: Implementera subtila animeringar vid klick på knappar och sidladdningar för att förbättra användarupplevelsen.
